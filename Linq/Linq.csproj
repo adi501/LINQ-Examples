@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49E49E91-5AA7-42FF-BE73-CD06633611CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Linq</RootNamespace>
+    <AssemblyName>Linq</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contains_exp_just_like_like_operator_in_sql.aspx" />
+    <Content Include="Create_a_XML_Using_Linq_which_contians_the_Employee_details.aspx" />
+    <Content Include="Creating a New Table.aspx" />
+    <Content Include="Cross_Join.aspx" />
+    <Content Include="EndsWith_keyword.aspx" />
+    <Content Include="Find_minimum_3_numbers_from_the_int_array.aspx" />
+    <Content Include="Find_the_distinct_words_in_the_string_order_by_words.aspx" />
+    <Content Include="Find_the_duplicate_words_in_the_string_order_by_words.aspx" />
+    <Content Include="Find_the_even_numbers_in_the_int_array.aspx" />
+    <Content Include="Find_the_gif_image_in_a_folder_order_by_image_size.aspx" />
+    <Content Include="Find_the_maximum_three_numbers_from_the_int_array.aspx" />
+    <Content Include="Find_the_months_starting_with_J_in_the_string_array.aspx" />
+    <Content Include="Find_the_months_which_contains_A_in_the_string_array.aspx" />
+    <Content Include="Find_the_names_which_are_having_lenght_more_than_4_in_the_string_array.aspx" />
+    <Content Include="Find_the_numbers_between_20_and_35_from_the_int_array.aspx" />
+    <Content Include="Find_the_odd_numbers_in_the_int_array.aspx" />
+    <Content Include="Find_the_products_which_are_having_price_between_5000_and_10000_from_Products_list.aspx" />
+    <Content Include="Group_join_Employees_and_their_total_sum_of_expense_amount.aspx" />
+    <Content Include="how to add a LINQ to SQL Item to the Project.aspx" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\5.png" />
+    <Content Include="Images\Analog_clock_animation.gif" />
+    <Content Include="Images\butterfly-animated.gif" />
+    <Content Include="Images\funny-morning-gif.gif" />
+    <Content Include="InnerJoin_tblEmployees_and_tblDepartments.aspx" />
+    <Content Include="Inner_join_multiple_tables_by_using.aspx" />
+    <Content Include="Insert_data.aspx" />
+    <Content Include="Left_outer_join_on_tblEmployees_and_tblDepartments_table.aspx" />
+    <Content Include="LINQ_Query_Calling_SP_without_parameters.aspx" />
+    <Content Include="LINQ_Query_Calling_SP_with_parameters.aspx" />
+    <Content Include="LINQ_Query_Contains.aspx" />
+    <Content Include="LINQ_Query_StartsWith.aspx" />
+    <Content Include="LINQ_Query_to_Insert.aspx" />
+    <Content Include="LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees.aspx" />
+    <Content Include="LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees_who_are_having_Salary_more_than_200000.aspx" />
+    <Content Include="LINQ_To_Dataset_with_Group_By.aspx" />
+    <Content Include="LINQ_to_DataSet_With_where.aspx" />
+    <Content Include="LINQ_to_SQL_Delete.aspx" />
+    <Content Include="LINQ_to_SQL_Update.aspx" />
+    <Content Include="LINQ_to_Strings_Split_String_with_space.aspx" />
+    <Content Include="LINQ_to_XML_Where_condition_to_filter_records.aspx" />
+    <Content Include="Order by lenght.aspx" />
+    <Content Include="Orderby.aspx" />
+    <Content Include="OrderByDescending.aspx" />
+    <Content Include="Reading_XML_using_LINQ.aspx" />
+    <Content Include="Reading_XML_using_LINQ_Parse_Method.aspx" />
+    <Content Include="Reverse.aspx" />
+    <Content Include="Select and convert Upper and lower laters.aspx" />
+    <Content Include="Select query.aspx" />
+    <Content Include="Select with Stored procedure.aspx" />
+    <Content Include="select with where.aspx" />
+    <Content Include="Skip rows from select.aspx" />
+    <Content Include="StartsWith_keyword.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="TakeWhile.aspx" />
+    <Content Include="Top rows or take in linq.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="XML\Countries.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contains_exp_just_like_like_operator_in_sql.aspx.cs">
+      <DependentUpon>Contains_exp_just_like_like_operator_in_sql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contains_exp_just_like_like_operator_in_sql.aspx.designer.cs">
+      <DependentUpon>Contains_exp_just_like_like_operator_in_sql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create_a_XML_Using_Linq_which_contians_the_Employee_details.aspx.cs">
+      <DependentUpon>Create_a_XML_Using_Linq_which_contians_the_Employee_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create_a_XML_Using_Linq_which_contians_the_Employee_details.aspx.designer.cs">
+      <DependentUpon>Create_a_XML_Using_Linq_which_contians_the_Employee_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Creating a New Table.aspx.cs">
+      <DependentUpon>Creating a New Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Creating a New Table.aspx.designer.cs">
+      <DependentUpon>Creating a New Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cross_Join.aspx.cs">
+      <DependentUpon>Cross_Join.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cross_Join.aspx.designer.cs">
+      <DependentUpon>Cross_Join.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Database.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EndsWith_keyword.aspx.cs">
+      <DependentUpon>EndsWith_keyword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EndsWith_keyword.aspx.designer.cs">
+      <DependentUpon>EndsWith_keyword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_minimum_3_numbers_from_the_int_array.aspx.cs">
+      <DependentUpon>Find_minimum_3_numbers_from_the_int_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_minimum_3_numbers_from_the_int_array.aspx.designer.cs">
+      <DependentUpon>Find_minimum_3_numbers_from_the_int_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_distinct_words_in_the_string_order_by_words.aspx.cs">
+      <DependentUpon>Find_the_distinct_words_in_the_string_order_by_words.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_distinct_words_in_the_string_order_by_words.aspx.designer.cs">
+      <DependentUpon>Find_the_distinct_words_in_the_string_order_by_words.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_duplicate_words_in_the_string_order_by_words.aspx.cs">
+      <DependentUpon>Find_the_duplicate_words_in_the_string_order_by_words.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_duplicate_words_in_the_string_order_by_words.aspx.designer.cs">
+      <DependentUpon>Find_the_duplicate_words_in_the_string_order_by_words.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_even_numbers_in_the_int_array.aspx.cs">
+      <DependentUpon>Find_the_even_numbers_in_the_int_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_even_numbers_in_the_int_array.aspx.designer.cs">
+      <DependentUpon>Find_the_even_numbers_in_the_int_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_gif_image_in_a_folder_order_by_image_size.aspx.cs">
+      <DependentUpon>Find_the_gif_image_in_a_folder_order_by_image_size.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_gif_image_in_a_folder_order_by_image_size.aspx.designer.cs">
+      <DependentUpon>Find_the_gif_image_in_a_folder_order_by_image_size.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_maximum_three_numbers_from_the_int_array.aspx.cs">
+      <DependentUpon>Find_the_maximum_three_numbers_from_the_int_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_maximum_three_numbers_from_the_int_array.aspx.designer.cs">
+      <DependentUpon>Find_the_maximum_three_numbers_from_the_int_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_months_starting_with_J_in_the_string_array.aspx.cs">
+      <DependentUpon>Find_the_months_starting_with_J_in_the_string_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_months_starting_with_J_in_the_string_array.aspx.designer.cs">
+      <DependentUpon>Find_the_months_starting_with_J_in_the_string_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_months_which_contains_A_in_the_string_array.aspx.cs">
+      <DependentUpon>Find_the_months_which_contains_A_in_the_string_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_months_which_contains_A_in_the_string_array.aspx.designer.cs">
+      <DependentUpon>Find_the_months_which_contains_A_in_the_string_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_names_which_are_having_lenght_more_than_4_in_the_string_array.aspx.cs">
+      <DependentUpon>Find_the_names_which_are_having_lenght_more_than_4_in_the_string_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_names_which_are_having_lenght_more_than_4_in_the_string_array.aspx.designer.cs">
+      <DependentUpon>Find_the_names_which_are_having_lenght_more_than_4_in_the_string_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_numbers_between_20_and_35_from_the_int_array.aspx.cs">
+      <DependentUpon>Find_the_numbers_between_20_and_35_from_the_int_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_numbers_between_20_and_35_from_the_int_array.aspx.designer.cs">
+      <DependentUpon>Find_the_numbers_between_20_and_35_from_the_int_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_odd_numbers_in_the_int_array.aspx.cs">
+      <DependentUpon>Find_the_odd_numbers_in_the_int_array.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_odd_numbers_in_the_int_array.aspx.designer.cs">
+      <DependentUpon>Find_the_odd_numbers_in_the_int_array.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Find_the_products_which_are_having_price_between_5000_and_10000_from_Products_list.aspx.cs">
+      <DependentUpon>Find_the_products_which_are_having_price_between_5000_and_10000_from_Products_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Find_the_products_which_are_having_price_between_5000_and_10000_from_Products_list.aspx.designer.cs">
+      <DependentUpon>Find_the_products_which_are_having_price_between_5000_and_10000_from_Products_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Group_join_Employees_and_their_total_sum_of_expense_amount.aspx.cs">
+      <DependentUpon>Group_join_Employees_and_their_total_sum_of_expense_amount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Group_join_Employees_and_their_total_sum_of_expense_amount.aspx.designer.cs">
+      <DependentUpon>Group_join_Employees_and_their_total_sum_of_expense_amount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="how to add a LINQ to SQL Item to the Project.aspx.cs">
+      <DependentUpon>how to add a LINQ to SQL Item to the Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="how to add a LINQ to SQL Item to the Project.aspx.designer.cs">
+      <DependentUpon>how to add a LINQ to SQL Item to the Project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InnerJoin_tblEmployees_and_tblDepartments.aspx.cs">
+      <DependentUpon>InnerJoin_tblEmployees_and_tblDepartments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InnerJoin_tblEmployees_and_tblDepartments.aspx.designer.cs">
+      <DependentUpon>InnerJoin_tblEmployees_and_tblDepartments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inner_join_multiple_tables_by_using.aspx.cs">
+      <DependentUpon>Inner_join_multiple_tables_by_using.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inner_join_multiple_tables_by_using.aspx.designer.cs">
+      <DependentUpon>Inner_join_multiple_tables_by_using.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Insert_data.aspx.cs">
+      <DependentUpon>Insert_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insert_data.aspx.designer.cs">
+      <DependentUpon>Insert_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Left_outer_join_on_tblEmployees_and_tblDepartments_table.aspx.cs">
+      <DependentUpon>Left_outer_join_on_tblEmployees_and_tblDepartments_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Left_outer_join_on_tblEmployees_and_tblDepartments_table.aspx.designer.cs">
+      <DependentUpon>Left_outer_join_on_tblEmployees_and_tblDepartments_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_Query_Calling_SP_without_parameters.aspx.cs">
+      <DependentUpon>LINQ_Query_Calling_SP_without_parameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_Query_Calling_SP_without_parameters.aspx.designer.cs">
+      <DependentUpon>LINQ_Query_Calling_SP_without_parameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_Query_Calling_SP_with_parameters.aspx.cs">
+      <DependentUpon>LINQ_Query_Calling_SP_with_parameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_Query_Calling_SP_with_parameters.aspx.designer.cs">
+      <DependentUpon>LINQ_Query_Calling_SP_with_parameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_Query_Contains.aspx.cs">
+      <DependentUpon>LINQ_Query_Contains.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_Query_Contains.aspx.designer.cs">
+      <DependentUpon>LINQ_Query_Contains.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_Query_StartsWith.aspx.cs">
+      <DependentUpon>LINQ_Query_StartsWith.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_Query_StartsWith.aspx.designer.cs">
+      <DependentUpon>LINQ_Query_StartsWith.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_Query_to_Insert.aspx.cs">
+      <DependentUpon>LINQ_Query_to_Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_Query_to_Insert.aspx.designer.cs">
+      <DependentUpon>LINQ_Query_to_Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees.aspx.cs">
+      <DependentUpon>LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees.aspx.designer.cs">
+      <DependentUpon>LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees_who_are_having_Salary_more_than_200000.aspx.cs">
+      <DependentUpon>LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees_who_are_having_Salary_more_than_200000.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees_who_are_having_Salary_more_than_200000.aspx.designer.cs">
+      <DependentUpon>LINQ_query_will_get_the_employee_details_from_database_table_tblEmployees_who_are_having_Salary_more_than_200000.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_To_Dataset_with_Group_By.aspx.cs">
+      <DependentUpon>LINQ_To_Dataset_with_Group_By.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_To_Dataset_with_Group_By.aspx.designer.cs">
+      <DependentUpon>LINQ_To_Dataset_with_Group_By.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_to_DataSet_With_where.aspx.cs">
+      <DependentUpon>LINQ_to_DataSet_With_where.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_to_DataSet_With_where.aspx.designer.cs">
+      <DependentUpon>LINQ_to_DataSet_With_where.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_to_SQL_Delete.aspx.cs">
+      <DependentUpon>LINQ_to_SQL_Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_to_SQL_Delete.aspx.designer.cs">
+      <DependentUpon>LINQ_to_SQL_Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_to_SQL_Update.aspx.cs">
+      <DependentUpon>LINQ_to_SQL_Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_to_SQL_Update.aspx.designer.cs">
+      <DependentUpon>LINQ_to_SQL_Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_to_Strings_Split_String_with_space.aspx.cs">
+      <DependentUpon>LINQ_to_Strings_Split_String_with_space.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_to_Strings_Split_String_with_space.aspx.designer.cs">
+      <DependentUpon>LINQ_to_Strings_Split_String_with_space.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ_to_XML_Where_condition_to_filter_records.aspx.cs">
+      <DependentUpon>LINQ_to_XML_Where_condition_to_filter_records.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ_to_XML_Where_condition_to_filter_records.aspx.designer.cs">
+      <DependentUpon>LINQ_to_XML_Where_condition_to_filter_records.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Order by lenght.aspx.cs">
+      <DependentUpon>Order by lenght.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order by lenght.aspx.designer.cs">
+      <DependentUpon>Order by lenght.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orderby.aspx.cs">
+      <DependentUpon>Orderby.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orderby.aspx.designer.cs">
+      <DependentUpon>Orderby.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderByDescending.aspx.cs">
+      <DependentUpon>OrderByDescending.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderByDescending.aspx.designer.cs">
+      <DependentUpon>OrderByDescending.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reading_XML_using_LINQ.aspx.cs">
+      <DependentUpon>Reading_XML_using_LINQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reading_XML_using_LINQ.aspx.designer.cs">
+      <DependentUpon>Reading_XML_using_LINQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reading_XML_using_LINQ_Parse_Method.aspx.cs">
+      <DependentUpon>Reading_XML_using_LINQ_Parse_Method.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reading_XML_using_LINQ_Parse_Method.aspx.designer.cs">
+      <DependentUpon>Reading_XML_using_LINQ_Parse_Method.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reverse.aspx.cs">
+      <DependentUpon>Reverse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reverse.aspx.designer.cs">
+      <DependentUpon>Reverse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Select and convert Upper and lower laters.aspx.cs">
+      <DependentUpon>Select and convert Upper and lower laters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Select and convert Upper and lower laters.aspx.designer.cs">
+      <DependentUpon>Select and convert Upper and lower laters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Select query.aspx.cs">
+      <DependentUpon>Select query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Select query.aspx.designer.cs">
+      <DependentUpon>Select query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Select with Stored procedure.aspx.cs">
+      <DependentUpon>Select with Stored procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Select with Stored procedure.aspx.designer.cs">
+      <DependentUpon>Select with Stored procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select with where.aspx.cs">
+      <DependentUpon>select with where.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select with where.aspx.designer.cs">
+      <DependentUpon>select with where.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Skip rows from select.aspx.cs">
+      <DependentUpon>Skip rows from select.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skip rows from select.aspx.designer.cs">
+      <DependentUpon>Skip rows from select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StartsWith_keyword.aspx.cs">
+      <DependentUpon>StartsWith_keyword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartsWith_keyword.aspx.designer.cs">
+      <DependentUpon>StartsWith_keyword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TakeWhile.aspx.cs">
+      <DependentUpon>TakeWhile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TakeWhile.aspx.designer.cs">
+      <DependentUpon>TakeWhile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Top rows or take in linq.aspx.cs">
+      <DependentUpon>Top rows or take in linq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Top rows or take in linq.aspx.designer.cs">
+      <DependentUpon>Top rows or take in linq.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Database.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="MyDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MyDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database.dbml.layout">
+      <DependentUpon>Database.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyDB.dbml.layout">
+      <DependentUpon>MyDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6046</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

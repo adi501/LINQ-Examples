@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Linq" Class="MyDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=Linq;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="LinqConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblDepartment" Member="tblDepartments">
+    <Type Name="tblDepartment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblDepartment_tblEmployee" Member="tblEmployees" ThisKey="Id" OtherKey="Dep_Id" Type="tblEmployee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEmployee" Member="tblEmployees">
+    <Type Name="tblEmployee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Dep_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblEmployee_tblEmployeeExpense" Member="tblEmployeeExpenses" ThisKey="Id" OtherKey="Emp_Id" Type="tblEmployeeExpense" />
+      <Association Name="tblDepartment_tblEmployee" Member="tblDepartment" ThisKey="Dep_Id" OtherKey="Id" Type="tblDepartment" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEmployeeExpenses" Member="tblEmployeeExpenses">
+    <Type Name="tblEmployeeExpense">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Emp_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expenses_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ExpenseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblEmployee_tblEmployeeExpense" Member="tblEmployee" ThisKey="Emp_Id" OtherKey="Id" Type="tblEmployee" IsForeignKey="true" />
+      <Association Name="tblExpense_tblEmployeeExpense" Member="tblExpense" ThisKey="Expenses_Id" OtherKey="Id" Type="tblExpense" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblExpenses" Member="tblExpenses">
+    <Type Name="tblExpense">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Expenses" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblExpense_tblEmployeeExpense" Member="tblEmployeeExpenses" ThisKey="Id" OtherKey="Expenses_Id" Type="tblEmployeeExpense" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Sp_getDepartment" Method="Sp_getDepartment">
+    <ElementType Name="Sp_getDepartmentResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Sp_insertDepartment" Method="Sp_insertDepartment">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IsActive" Parameter="isActive" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
